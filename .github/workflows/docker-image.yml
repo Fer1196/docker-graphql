@@ -21,3 +21,11 @@ jobs:
           echo "Iniciando login..."
           echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USER }}" --password-stdin
           echo "¡Login exitoso!"
+
+      - name: Build Docker IMAGE
+        run: |
+           echo build -t fernando1196/docker-graphql:0.0.2 .
+
+      - name: Push Docker image
+        run: |
+           echo build -t fernando1196/docker-graphql:0.0.2 .
