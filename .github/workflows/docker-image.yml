@@ -24,8 +24,8 @@ jobs:
 
       - name: Build Docker IMAGE
         run: |
-           echo build -t fernando1196/docker-graphql:0.0.2 .
+           docker build -t fernando1196/docker-graphql:0.0.2 .
 
       - name: Push Docker image
         run: |
-           echo push -t fernando1196/docker-graphql:0.0.2
+           docker push -t fernando1196/docker-graphql:0.0.2
